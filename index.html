@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mabrur Chowdhury — Senior Android Engineer</title>
+  <meta name="description" content="Senior Android Engineer in Dhaka, Bangladesh. Nine years of Kotlin at consumer scale — offline-first architecture, unreliable networks, and releases that don't crash.">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Set theme before first paint to avoid a flash of the wrong palette.
+    (function () {
+      var saved = null;
+      try { saved = localStorage.getItem('mc-portfolio-theme'); } catch (e) {}
+      var theme = (saved === 'light' || saved === 'dark')
+        ? saved
+        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+      <p class="brand">
+        <span class="brand-dot"></span>
+        <span class="brand-name">Mabrur Chowdhury</span>
+        <span class="brand-role">Senior Android Engineer · Dhaka, Bangladesh</span>
+      </p>
+      <nav class="site-nav">
+        <a class="link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a class="link" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="link" href="mailto:hello@mabrur.dev">Email</a>
+        <a class="link" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">Resume ↓</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">Dark</button>
+      </nav>
+    </header>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro">
+      <h1 class="intro-headline">
+        I build Android apps that <em>millions of people</em> depend on.
+      </h1>
+      <p class="intro-lede">
+        A national contact-tracing platform for Bangladesh. A super-app whose growth helped raise a $15M Series A. And now — an end-to-end-encrypted messenger for the enterprise.
+      </p>
+      <p class="intro-note">
+        Nine years of Kotlin at consumer scale, with a bias for offline-first architecture, unreliable networks, and releases that don't crash.
+      </p>
+    </section>
+
+    <!-- ============ METRICS ============ -->
+    <section class="metrics" data-reveal>
+      <div class="metric metric--accent">
+        <div class="metric-value">1M+</div>
+        <div class="metric-label">Active installs</div>
+      </div>
+      <div class="metric metric--green">
+        <div class="metric-value">100K+</div>
+        <div class="metric-label">Daily active users</div>
+      </div>
+      <div class="metric metric--cobalt">
+        <div class="metric-value">98%</div>
+        <div class="metric-label">Crash-free sessions</div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section id="work" class="section">
+      <div class="section-marker">
+        <div class="section-number section-number--accent">01</div>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="section-body">
+        <article class="work" data-reveal>
+          <p class="eyebrow eyebrow--accent">Now building</p>
+          <h3 class="work-title">Enterprise end-to-end-encrypted messenger</h3>
+          <p class="work-sub">Confidential enterprise product — no screenshots, by design</p>
+          <p class="work-desc">
+            The Android client for a secure workplace messenger: Signal-protocol encryption over MQTT, voice and video on Janus WebRTC. I own session and multi-device key management end-to-end — and the unglamorous work of keeping calls alive on networks that drop every few minutes.
+          </p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Jetpack Compose</span>
+            <span class="tag">libsignal</span>
+            <span class="tag">MQTT</span>
+            <span class="tag">Janus WebRTC</span>
+            <span class="tag">Coroutines</span>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <p class="eyebrow eyebrow--green">1M+ installs · 100K+ DAU</p>
+          <h3 class="work-title">Ride-sharing &amp; food-delivery super-app</h3>
+          <p class="work-sub">Consumer super-app — rides, food, parcels</p>
+          <p class="work-desc">
+            Core Android engineer through hypergrowth. Rebuilt the ordering flow and real-time trip tracking for low-end devices on 2G — cutting cold start in half and holding 98%+ crash-free while traction underpinned a $15M Series A.
+          </p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Java</span>
+            <span class="tag">Maps SDK</span>
+            <span class="tag">Firebase</span>
+            <span class="tag">gRPC</span>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <p class="eyebrow eyebrow--cobalt">Government of Bangladesh</p>
+          <h3 class="work-title">National Covid-19 contact tracing</h3>
+          <p class="work-sub">Built on a pandemic timeline</p>
+          <p class="work-desc">
+            A privacy-preserving BLE contact-tracing app for a country of 160 million, shipped in weeks. Battery-safe background scanning, Bangla-first localization, and onboarding that worked for people installing their first app.
+          </p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">BLE</span>
+            <span class="tag">WorkManager</span>
+            <span class="tag">Room</span>
+          </div>
+        </article>
+
+        <article class="work" data-reveal>
+          <p class="eyebrow eyebrow--accent">Rural connectivity</p>
+          <h3 class="work-title">Offline-first field data platform</h3>
+          <p class="work-sub">Data collection where the network is a rumor</p>
+          <p class="work-desc">
+            A collection platform for field teams working days away from a signal. Designed a conflict-free sync engine with queued, resumable media uploads — days of offline work reconciles cleanly the moment connectivity returns, with zero data loss.
+          </p>
+          <div class="tags">
+            <span class="tag">Kotlin</span>
+            <span class="tag">Room</span>
+            <span class="tag">SQLite</span>
+            <span class="tag">WorkManager</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section id="writing" class="section" data-reveal>
+      <div class="section-marker">
+        <div class="section-number section-number--green">02</div>
+        <h2 class="section-title">Writing</h2>
+      </div>
+      <div class="section-body section-body--writing">
+        <div>
+          <a class="link writing-link" href="#">Making libsignal behave on Android <span class="arrow">↗</span></a>
+          <p class="writing-desc">Sessions, sealed sender, and the multi-device edge cases nobody writes about.</p>
+        </div>
+        <div>
+          <a class="link writing-link" href="#">Offline-first is a state machine <span class="arrow">↗</span></a>
+          <p class="writing-desc">Designing sync you can actually reason about when the network is a rumor.</p>
+        </div>
+        <div>
+          <a class="link writing-link" href="#">Surviving the 2G tail <span class="arrow">↗</span></a>
+          <p class="writing-desc">Performance budgets for the low-end Android devices most of the world uses.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section section--last" data-reveal>
+      <div class="section-marker">
+        <div class="section-number section-number--cobalt">03</div>
+        <h2 class="section-title">Experience</h2>
+      </div>
+      <div class="section-body section-body--experience">
+        <div class="xp-row">
+          <span class="xp-dates xp-dates--current">2022 — Present</span>
+          <span class="xp-org">Enterprise Messaging Co.</span>
+          <span class="xp-role">Senior Android Engineer</span>
+        </div>
+        <div class="xp-row">
+          <span class="xp-dates">2018 — 2022</span>
+          <span class="xp-org">Super-App Co.</span>
+          <span class="xp-role">Senior Android Engineer</span>
+        </div>
+        <div class="xp-row">
+          <span class="xp-dates">2016 — 2018</span>
+          <span class="xp-org">Digital Services Co.</span>
+          <span class="xp-role">Android Engineer</span>
+        </div>
+        <div class="xp-row">
+          <span class="xp-dates">2015 — 2016</span>
+          <span class="xp-org">Software Studio Ltd.</span>
+          <span class="xp-role">Software Engineer</span>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- ============ FOOTER (full-bleed color) ============ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-eyebrow">Have a role in mind?</p>
+      <a class="footer-mail" href="mailto:hello@mabrur.dev">hello@mabrur.dev</a>
+      <div class="footer-meta">
+        <div class="footer-links">
+          <a class="footer-link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+          <a class="footer-link" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="footer-link" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">Resume ↓</a>
+        </div>
+        <span class="footer-place">Dhaka, Bangladesh · 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
