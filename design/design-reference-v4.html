@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="aa2ee83d-ec32-4624-b5e5-a2a85e5b2db8"></script>
+</head>
+<body>
+
+<x-dc>
+<helmet>
+<title>mabrur.dev — Senior Android Engineer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("c3b85aca-5467-43a5-a7f4-1be738fde3ae") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("6603badc-a2f5-49e7-b0ac-e599c4b3236f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("c3b85aca-5467-43a5-a7f4-1be738fde3ae") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("6603badc-a2f5-49e7-b0ac-e599c4b3236f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("c3b85aca-5467-43a5-a7f4-1be738fde3ae") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Instrument Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url("6603badc-a2f5-49e7-b0ac-e599c4b3236f") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("7cd0a098-64f1-426d-bc18-5efaa17d461d") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("3e766c2e-0b5d-46eb-bf41-3eded3cd52b2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("a16f94bf-34fc-4482-9b97-94a8bfef59e5") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("18ab8c7f-3346-43d3-bc20-10e19f61a66f") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("acfb87a2-2ef9-4e09-8ec6-bb165cd92c04") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("655bcfe4-8b7f-4dc5-9b2e-7e5aad3fb4f0") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c0640230-80c1-4fd9-95f7-d4d1d838b6a2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("78742073-9d5f-403f-8459-14c1975df902") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("4e79e4c6-cb1f-405a-bc7b-93555402425c") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("1c1e5b6d-e25a-4231-92dd-16683c9b6111") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("9f4cef22-ecf0-4358-96ac-5d7736be3208") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("b3678bf3-fc42-4c64-b92e-b33045179e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c0640230-80c1-4fd9-95f7-d4d1d838b6a2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("78742073-9d5f-403f-8459-14c1975df902") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("4e79e4c6-cb1f-405a-bc7b-93555402425c") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("1c1e5b6d-e25a-4231-92dd-16683c9b6111") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("9f4cef22-ecf0-4358-96ac-5d7736be3208") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("b3678bf3-fc42-4c64-b92e-b33045179e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c0640230-80c1-4fd9-95f7-d4d1d838b6a2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("78742073-9d5f-403f-8459-14c1975df902") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("4e79e4c6-cb1f-405a-bc7b-93555402425c") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("1c1e5b6d-e25a-4231-92dd-16683c9b6111") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("9f4cef22-ecf0-4358-96ac-5d7736be3208") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("b3678bf3-fc42-4c64-b92e-b33045179e2b") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+  html { scroll-behavior: smooth; }
+  body { margin: 0; }
+  @keyframes mc-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  ::selection { background: #A3E635; color: #101210; }
+  image-slot { display: block; width: 100%; height: 100%; }
+</style>
+</helmet>
+
+<div ref="{{ rootRef }}" style="--bg:#101210; --panel:#161915; --ink:#E8EDE4; --muted:#8B948A; --faint:#5C655B; --rule:#252A24; --green:#A3E635; --cyan:#67E8F9; --orange:#FDBA74; --violet:#C4B5FD; --dim-green:rgba(163,230,53,0.12); min-height:100vh; background:var(--bg); color:var(--ink); font-family:'Instrument Sans', sans-serif; font-size:16px; line-height:1.65; transition:background 0.35s ease, color 0.35s ease; -webkit-font-smoothing:antialiased;">
+
+  <div style="max-width:1040px; margin:0 auto; padding:0 clamp(20px, 5vw, 56px);">
+
+    <!-- ============ HEADER ============ -->
+    <header data-screen-label="Header" style="display:flex; flex-wrap:wrap; gap:12px 32px; justify-content:space-between; align-items:center; padding:clamp(20px, 3.5vh, 32px) 0; border-bottom:1px solid var(--rule); font-family:'JetBrains Mono', monospace;">
+      <p style="margin:0; font-size:14px; display:flex; align-items:center; gap:10px;">
+        <span style="color:var(--green);">~/</span><span style="font-weight:700;">mabrur</span><span style="color:var(--faint);">·</span><span style="color:var(--muted); font-size:13px;">senior android engineer · dhaka, bd</span>
+      </p>
+      <nav style="display:flex; align-items:center; gap:6px; font-size:13px;">
+        <a href="https://github.com" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none; padding:5px 10px; border-radius:6px; transition:all 0.15s;" style-hover="color:var(--green); background:var(--dim-green);">github</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none; padding:5px 10px; border-radius:6px; transition:all 0.15s;" style-hover="color:var(--green); background:var(--dim-green);">linkedin</a>
+        <a href="mailto:hello@mabrur.dev" style="color:var(--muted); text-decoration:none; padding:5px 10px; border-radius:6px; transition:all 0.15s;" style-hover="color:var(--green); background:var(--dim-green);">email</a>
+        <a href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf" style="color:var(--green); text-decoration:none; padding:5px 10px; border:1px solid var(--green); border-radius:6px; transition:all 0.15s;" style-hover="background:var(--dim-green);">resume.pdf ↓</a>
+        <button onclick="{{ toggleTheme }}" aria-label="Toggle color theme" style="background:none; border:1px solid var(--rule); border-radius:6px; padding:5px 10px; margin:0; font:inherit; font-size:13px; color:var(--muted); cursor:pointer; transition:all 0.15s;" style-hover="color:var(--ink); border-color:var(--faint);">{{ themeLabel }}</button>
+      </nav>
+    </header>
+
+    <!-- ============ INTRO ============ -->
+    <section data-screen-label="Intro" style="padding:clamp(64px, 14vh, 150px) 0 clamp(48px, 9vh, 104px);">
+      <p style="margin:0 0 24px; font-family:'JetBrains Mono', monospace; font-size:14px; color:var(--faint);"><span style="color:var(--green);">$</span> whoami <span style="color:var(--muted); font-style:italic;">&nbsp;# 9 years, Kotlin, consumer scale</span></p>
+      <h1 style="margin:0; font-family:'JetBrains Mono', monospace; font-weight:700; font-size:clamp(30px, 5.4vw, 60px); line-height:1.22; letter-spacing:-0.03em; max-width:19em; text-wrap:balance;">
+        I build Android apps that <span style="color:var(--green);">millions of people</span> depend on<span style="display:inline-block; width:0.5em; height:1em; background:var(--green); vertical-align:-0.12em; margin-left:0.08em; animation:mc-blink 1.1s step-end infinite;"></span>
+      </h1>
+      <p style="margin:clamp(28px, 4vh, 40px) 0 0; font-size:clamp(17px, 2vw, 20px); line-height:1.6; max-width:36em; color:var(--muted); text-wrap:pretty;">
+        A national contact-tracing platform for Bangladesh. A super-app whose growth helped raise a <span style="color:var(--ink);">$15M Series A</span>. Now: an end-to-end-encrypted messenger for the enterprise — built for networks that drop every few minutes.
+      </p>
+    </section>
+
+    <!-- ============ METRICS (terminal) ============ -->
+    <section data-screen-label="Metrics" data-reveal="" style="padding:0 0 clamp(64px, 12vh, 136px);">
+      <div style="background:var(--panel); border:1px solid var(--rule); border-radius:12px; overflow:hidden;">
+        <div style="display:flex; align-items:center; gap:8px; padding:12px 16px; border-bottom:1px solid var(--rule);">
+          <span style="width:11px; height:11px; border-radius:50%; background:#F87171; opacity:0.85;"></span>
+          <span style="width:11px; height:11px; border-radius:50%; background:#FBBF24; opacity:0.85;"></span>
+          <span style="width:11px; height:11px; border-radius:50%; background:#34D399; opacity:0.85;"></span>
+          <span style="margin-left:10px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--faint);">mabrur@dhaka: ~/impact</span>
+        </div>
+        <div style="padding:clamp(24px, 4vh, 40px) clamp(20px, 4vw, 40px); font-family:'JetBrains Mono', monospace;">
+          <p style="margin:0 0 20px; font-size:14px; color:var(--faint);"><span style="color:var(--green);">$</span> ./stats --production</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:32px clamp(24px, 4vw, 56px);">
+            <div>
+              <div style="font-weight:700; font-size:clamp(44px, 6.4vw, 76px); line-height:1; letter-spacing:-0.04em; color:var(--green);">1M+</div>
+              <div style="margin-top:12px; font-size:13px; color:var(--muted);"><span style="color:var(--faint);">--</span>active-installs</div>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:clamp(44px, 6.4vw, 76px); line-height:1; letter-spacing:-0.04em; color:var(--cyan);">100K+</div>
+              <div style="margin-top:12px; font-size:13px; color:var(--muted);"><span style="color:var(--faint);">--</span>daily-active-users</div>
+            </div>
+            <div>
+              <div style="font-weight:700; font-size:clamp(44px, 6.4vw, 76px); line-height:1; letter-spacing:-0.04em; color:var(--orange);">98%+</div>
+              <div style="margin-top:12px; font-size:13px; color:var(--muted);"><span style="color:var(--faint);">--</span>crash-free-sessions</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section id="work" data-screen-label="Selected Work" style="padding:0 0 clamp(56px, 10vh, 120px);">
+      <h2 style="margin:0 0 clamp(32px, 5vh, 48px); font-family:'JetBrains Mono', monospace; font-weight:500; font-size:clamp(20px, 2.6vw, 26px); letter-spacing:-0.01em;"><span style="color:var(--violet);">fun</span> <span style="color:var(--ink);">selectedWork</span><span style="color:var(--faint);">(): List&lt;</span><span style="color:var(--cyan);">Project</span><span style="color:var(--faint);">&gt; {</span></h2>
+
+      <div style="display:flex; flex-direction:column; gap:clamp(20px, 3vh, 28px); padding-left:clamp(0px, 2vw, 24px);">
+
+        <article data-reveal="" style="background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:clamp(24px, 4vh, 36px) clamp(20px, 4vw, 36px); transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <p style="margin:0 0 12px; font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); font-style:italic;">// current · confidential — no screenshots, by design</p>
+          <div style="display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 14px;">
+            <h3 style="margin:0; font-size:clamp(21px, 2.8vw, 27px); font-weight:600; letter-spacing:-0.01em;">Enterprise E2E-encrypted messenger</h3>
+            <span style="font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--green); background:var(--dim-green); border-radius:5px; padding:3px 9px;">● now building</span>
+          </div>
+          <p style="margin:14px 0 0; max-width:44em; color:var(--muted); text-wrap:pretty;">
+            The Android client for a secure workplace messenger: Signal-protocol encryption over MQTT, voice and video on Janus WebRTC. I own session and multi-device key management end-to-end — and the unglamorous work of keeping calls alive on hostile networks.
+          </p>
+          <p style="margin:16px 0 0; font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--faint);"><span style="color:var(--violet);">val</span> stack <span style="color:var(--faint);">=</span> <span style="color:var(--orange);">[Kotlin, Compose, libsignal, MQTT, Janus WebRTC, Coroutines]</span></p>
+        </article>
+
+        <article data-reveal="" style="background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:clamp(24px, 4vh, 36px) clamp(20px, 4vw, 36px); transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <p style="margin:0 0 12px; font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); font-style:italic;">// 1M+ installs · 100K+ DAU · $15M Series A</p>
+          <h3 style="margin:0; font-size:clamp(21px, 2.8vw, 27px); font-weight:600; letter-spacing:-0.01em;">Ride-sharing &amp; food-delivery super-app</h3>
+          <p style="margin:14px 0 0; max-width:44em; color:var(--muted); text-wrap:pretty;">
+            Core Android engineer through hypergrowth — rides, food, parcels. Rebuilt the ordering flow and real-time trip tracking for low-end devices on 2G: cold start cut in half, 98%+ crash-free held while traction underpinned the raise.
+          </p>
+          <p style="margin:16px 0 0; font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--faint);"><span style="color:var(--violet);">val</span> stack <span style="color:var(--faint);">=</span> <span style="color:var(--orange);">[Kotlin, Java, Maps SDK, Firebase, gRPC]</span></p>
+        </article>
+
+        <article data-reveal="" style="background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:clamp(24px, 4vh, 36px) clamp(20px, 4vw, 36px); transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <p style="margin:0 0 12px; font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); font-style:italic;">// government of bangladesh · shipped in weeks</p>
+          <h3 style="margin:0; font-size:clamp(21px, 2.8vw, 27px); font-weight:600; letter-spacing:-0.01em;">National Covid-19 contact tracing</h3>
+          <p style="margin:14px 0 0; max-width:44em; color:var(--muted); text-wrap:pretty;">
+            A privacy-preserving BLE contact-tracing app for a country of 160 million. Battery-safe background scanning, Bangla-first localization, and onboarding that worked for people installing their first app.
+          </p>
+          <p style="margin:16px 0 0; font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--faint);"><span style="color:var(--violet);">val</span> stack <span style="color:var(--faint);">=</span> <span style="color:var(--orange);">[Kotlin, BLE, WorkManager, Room]</span></p>
+        </article>
+
+        <article data-reveal="" style="background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:clamp(24px, 4vh, 36px) clamp(20px, 4vw, 36px); transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <p style="margin:0 0 12px; font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); font-style:italic;">// data collection where the network is a rumor</p>
+          <h3 style="margin:0; font-size:clamp(21px, 2.8vw, 27px); font-weight:600; letter-spacing:-0.01em;">Offline-first field data platform</h3>
+          <p style="margin:14px 0 0; max-width:44em; color:var(--muted); text-wrap:pretty;">
+            Built for field teams working days away from a signal. A conflict-free sync engine with queued, resumable media uploads — days of offline work reconciles cleanly the moment connectivity returns, with zero data loss.
+          </p>
+          <p style="margin:16px 0 0; font-family:'JetBrains Mono', monospace; font-size:12.5px; color:var(--faint);"><span style="color:var(--violet);">val</span> stack <span style="color:var(--faint);">=</span> <span style="color:var(--orange);">[Kotlin, Room, SQLite, WorkManager]</span></p>
+        </article>
+      </div>
+      <p style="margin:clamp(24px, 4vh, 36px) 0 0; font-family:'JetBrains Mono', monospace; font-size:clamp(20px, 2.6vw, 26px); color:var(--faint);">}</p>
+    </section>
+
+    <!-- ============ APPS & PROJECTS ============ -->
+    <section id="apps" data-screen-label="Apps &amp; Projects" data-reveal="" style="padding:0 0 clamp(56px, 10vh, 120px);">
+      <h2 style="margin:0 0 10px; font-family:'JetBrains Mono', monospace; font-weight:500; font-size:clamp(20px, 2.6vw, 26px); letter-spacing:-0.01em;"><span style="color:var(--green);">$</span> ls ~/apps <span style="color:var(--faint);">--all</span></h2>
+      <p style="margin:0 0 clamp(28px, 4vh, 40px); font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); font-style:italic;">// shipped to production + weekend builds</p>
+
+      <div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:clamp(16px, 2.5vw, 24px); padding-left:clamp(0px, 2vw, 24px);">
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-superapp" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">Super-app — Rider</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--green); background:var(--dim-green); border-radius:4px; padding:2px 7px;">shipped</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">Rides, food &amp; parcels for 1M+ users.</p>
+            <a href="#" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">play store ↗</a>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-driver" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">Super-app — Driver</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--green); background:var(--dim-green); border-radius:4px; padding:2px 7px;">shipped</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">Real-time dispatch &amp; navigation on 2G.</p>
+            <a href="#" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">play store ↗</a>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-tracer" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">Covid-19 Tracer BD</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--green); background:var(--dim-green); border-radius:4px; padding:2px 7px;">shipped</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">National BLE contact tracing, gov of Bangladesh.</p>
+            <a href="#" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">play store ↗</a>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-field" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">Field Data Collector</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--green); background:var(--dim-green); border-radius:4px; padding:2px 7px;">shipped</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">Offline-first surveys for rural field teams.</p>
+            <a href="#" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">play store ↗</a>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-side1" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">MQTT Bench</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--cyan); background:rgba(103,232,249,0.10); border-radius:4px; padding:2px 7px;">personal</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">Open-source MQTT load-testing toolkit for mobile.</p>
+            <a href="https://github.com" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">github ↗</a>
+          </div>
+        </div>
+
+        <div style="display:flex; gap:16px; align-items:flex-start; background:var(--panel); border:1px solid var(--rule); border-radius:12px; padding:20px; transition:border-color 0.2s;" style-hover="border-color:var(--faint);">
+          <x-import component-from-global-scope="image-slot" from="43993352-d804-432a-9a3e-281d826b44ff#/image-slot.js" id="app-icon-side2" shape="rounded" radius="16" placeholder="icon" style="width:56px; height:56px; flex:0 0 56px;" hint-size="56px,56px"></x-import>
+          <div style="min-width:0;">
+            <div style="display:flex; flex-wrap:wrap; align-items:center; gap:8px;">
+              <h3 style="margin:0; font-size:16px; font-weight:600;">Rickshaw Fare</h3>
+              <span style="font-family:'JetBrains Mono', monospace; font-size:11px; color:var(--cyan); background:rgba(103,232,249,0.10); border-radius:4px; padding:2px 7px;">personal</span>
+            </div>
+            <p style="margin:6px 0 0; font-size:14px; color:var(--muted); line-height:1.5;">Compose playground — offline fare estimator for Dhaka.</p>
+            <a href="https://github.com" target="_blank" rel="noopener" style="display:inline-block; margin-top:8px; font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">github ↗</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ WRITING ============ -->
+    <section id="writing" data-screen-label="Writing" data-reveal="" style="padding:0 0 clamp(56px, 10vh, 120px);">
+      <h2 style="margin:0 0 clamp(28px, 4vh, 40px); font-family:'JetBrains Mono', monospace; font-weight:500; font-size:clamp(20px, 2.6vw, 26px); letter-spacing:-0.01em;"><span style="color:var(--violet);">val</span> <span style="color:var(--ink);">writing</span> <span style="color:var(--faint);">= listOf(</span></h2>
+      <div style="display:flex; flex-direction:column; padding-left:clamp(0px, 2vw, 24px);">
+        <div style="display:flex; gap:16px; align-items:baseline; padding:18px 0; border-top:1px solid var(--rule);">
+          <span style="font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); min-width:32px;">01</span>
+          <div>
+            <a href="#" style="font-size:clamp(17px, 2.1vw, 20px); font-weight:600; color:var(--ink); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">Making libsignal behave on Android <span style="color:var(--green);">↗</span></a>
+            <p style="margin:6px 0 0; font-size:15px; color:var(--muted); max-width:42em;">Sessions, sealed sender, and the multi-device edge cases nobody writes about.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:16px; align-items:baseline; padding:18px 0; border-top:1px solid var(--rule);">
+          <span style="font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); min-width:32px;">02</span>
+          <div>
+            <a href="#" style="font-size:clamp(17px, 2.1vw, 20px); font-weight:600; color:var(--ink); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">Offline-first is a state machine <span style="color:var(--green);">↗</span></a>
+            <p style="margin:6px 0 0; font-size:15px; color:var(--muted); max-width:42em;">Designing sync you can actually reason about when the network is a rumor.</p>
+          </div>
+        </div>
+        <div style="display:flex; gap:16px; align-items:baseline; padding:18px 0; border-top:1px solid var(--rule); border-bottom:1px solid var(--rule);">
+          <span style="font-family:'JetBrains Mono', monospace; font-size:13px; color:var(--faint); min-width:32px;">03</span>
+          <div>
+            <a href="#" style="font-size:clamp(17px, 2.1vw, 20px); font-weight:600; color:var(--ink); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">Surviving the 2G tail <span style="color:var(--green);">↗</span></a>
+            <p style="margin:6px 0 0; font-size:15px; color:var(--muted); max-width:42em;">Performance budgets for the low-end Android devices most of the world uses.</p>
+          </div>
+        </div>
+      </div>
+      <p style="margin:clamp(24px, 4vh, 36px) 0 0; font-family:'JetBrains Mono', monospace; font-size:clamp(20px, 2.6vw, 26px); color:var(--faint);">)</p>
+    </section>
+
+    <!-- ============ EXPERIENCE (git log) ============ -->
+    <section id="experience" data-screen-label="Experience" data-reveal="" style="padding:0 0 clamp(64px, 12vh, 144px);">
+      <h2 style="margin:0 0 clamp(28px, 4vh, 40px); font-family:'JetBrains Mono', monospace; font-weight:500; font-size:clamp(20px, 2.6vw, 26px); letter-spacing:-0.01em;"><span style="color:var(--green);">$</span> git log <span style="color:var(--faint);">--career --oneline</span></h2>
+      <div style="display:flex; flex-direction:column; font-family:'JetBrains Mono', monospace; font-size:14px; padding-left:clamp(0px, 2vw, 24px); border-left:1px solid var(--rule);">
+        <div style="display:flex; flex-wrap:wrap; gap:4px 18px; align-items:baseline; padding:13px 0 13px 20px; position:relative;">
+          <span style="position:absolute; left:-5px; top:20px; width:9px; height:9px; border-radius:50%; background:var(--green);"></span>
+          <span style="color:var(--orange);">2022→now</span>
+          <span style="font-weight:700; color:var(--ink);">Enterprise Messaging Co.</span>
+          <span style="color:var(--muted);">senior android engineer</span>
+          <span style="color:var(--green); background:var(--dim-green); border-radius:4px; padding:1px 8px; font-size:12px;">HEAD</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:4px 18px; align-items:baseline; padding:13px 0 13px 20px; position:relative;">
+          <span style="position:absolute; left:-5px; top:20px; width:9px; height:9px; border-radius:50%; background:var(--faint);"></span>
+          <span style="color:var(--orange);">2018→2022</span>
+          <span style="font-weight:700; color:var(--ink);">Super-App Co.</span>
+          <span style="color:var(--muted);">senior android engineer</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:4px 18px; align-items:baseline; padding:13px 0 13px 20px; position:relative;">
+          <span style="position:absolute; left:-5px; top:20px; width:9px; height:9px; border-radius:50%; background:var(--faint);"></span>
+          <span style="color:var(--orange);">2016→2018</span>
+          <span style="font-weight:700; color:var(--ink);">Digital Services Co.</span>
+          <span style="color:var(--muted);">android engineer</span>
+        </div>
+        <div style="display:flex; flex-wrap:wrap; gap:4px 18px; align-items:baseline; padding:13px 0 13px 20px; position:relative;">
+          <span style="position:absolute; left:-5px; top:20px; width:9px; height:9px; border-radius:50%; background:var(--faint);"></span>
+          <span style="color:var(--orange);">2015→2016</span>
+          <span style="font-weight:700; color:var(--ink);">Software Studio Ltd.</span>
+          <span style="color:var(--muted);">software engineer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer data-screen-label="Footer" style="border-top:1px solid var(--rule); padding:clamp(48px, 9vh, 104px) 0 0;">
+      <p style="margin:0 0 20px; font-family:'JetBrains Mono', monospace; font-size:14px; color:var(--faint);"><span style="color:var(--green);">$</span> ping mabrur <span style="color:var(--muted); font-style:italic;">&nbsp;# have a role in mind?</span></p>
+      <a href="mailto:hello@mabrur.dev" style="display:inline-block; font-family:'JetBrains Mono', monospace; font-weight:700; font-size:clamp(24px, 5vw, 56px); letter-spacing:-0.03em; color:var(--ink); text-decoration:none; transition:color 0.2s;" style-hover="color:var(--green);">hello@mabrur.dev<span style="color:var(--green);">_</span></a>
+      <div style="display:flex; flex-wrap:wrap; gap:8px 20px; justify-content:space-between; align-items:center; margin-top:clamp(40px, 7vh, 72px); padding:14px 0; border-top:1px solid var(--rule); font-family:'JetBrains Mono', monospace; font-size:12.5px;">
+        <div style="display:flex; gap:18px; align-items:center;">
+          <span style="display:flex; align-items:center; gap:7px; color:var(--muted);"><span style="width:8px; height:8px; border-radius:50%; background:var(--green);"></span>open to senior roles</span>
+          <a href="https://github.com" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">github</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" style="color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">linkedin</a>
+          <a href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf" style="color:var(--muted); text-decoration:none; transition:color 0.15s;" style-hover="color:var(--green);">resume.pdf</a>
+        </div>
+        <span style="color:var(--faint);">UTF-8 · Kotlin · dhaka, bd · 2026</span>
+      </div>
+    </footer>
+
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;default&quot;:&quot;light&quot;,&quot;options&quot;:[&quot;dark&quot;,&quot;light&quot;,&quot;auto&quot;],&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Theme&quot;}}">
+class Component extends DCLogic {
+  state = { override: null };
+  rootRef = React.createRef();
+
+  palette(mode) {
+    if (mode === 'light') {
+      return {
+        '--bg': '#F7F8F5', '--panel': '#FFFFFF', '--ink': '#1B211A',
+        '--muted': '#5D675C', '--faint': '#96A094', '--rule': '#E2E6DF',
+        '--green': '#3F6212', '--cyan': '#0E7490', '--orange': '#C2410C',
+        '--violet': '#6D28D9', '--dim-green': 'rgba(63,98,18,0.10)',
+        colorScheme: 'light'
+      };
+    }
+    return {
+      '--bg': '#101210', '--panel': '#161915', '--ink': '#E8EDE4',
+      '--muted': '#8B948A', '--faint': '#5C655B', '--rule': '#252A24',
+      '--green': '#A3E635', '--cyan': '#67E8F9', '--orange': '#FDBA74',
+      '--violet': '#C4B5FD', '--dim-green': 'rgba(163,230,53,0.12)',
+      colorScheme: 'dark'
+    };
+  }
+
+  effectiveMode() {
+    const pref = this.state.override ?? this.props.theme ?? 'dark';
+    if (pref !== 'auto') return pref;
+    return (typeof window !== 'undefined' && window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+  }
+
+  applyTheme() {
+    const el = this.rootRef.current;
+    if (!el) return;
+    const p = this.palette(this.effectiveMode());
+    Object.keys(p).forEach((k) => { if (k.startsWith('--')) el.style.setProperty(k, p[k]); });
+    el.style.colorScheme = p.colorScheme;
+  }
+
+  componentDidMount() {
+    try {
+      const saved = localStorage.getItem('mc-portfolio-v4-theme');
+      if (saved === 'light' || saved === 'dark') this.setState({ override: saved });
+    } catch (e) {}
+    this.applyTheme();
+    if (window.matchMedia) {
+      this.mq = window.matchMedia('(prefers-color-scheme: dark)');
+      this.mqFn = () => { this.applyTheme(); this.forceUpdate(); };
+      this.mq.addEventListener('change', this.mqFn);
+    }
+    this.setupReveal();
+  }
+
+  componentDidUpdate() { this.applyTheme(); }
+
+  componentWillUnmount() {
+    if (this.mq && this.mqFn) this.mq.removeEventListener('change', this.mqFn);
+    if (this.io) this.io.disconnect();
+  }
+
+  setupReveal() {
+    const root = this.rootRef.current;
+    if (!root || !('IntersectionObserver' in window)) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    this.io = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (en.isIntersecting) {
+          en.target.style.opacity = '1';
+          en.target.style.transform = 'none';
+          this.io.unobserve(en.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    root.querySelectorAll('[data-reveal]').forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top > window.innerHeight * 0.92) {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(14px)';
+        el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+        this.io.observe(el);
+      }
+    });
+  }
+
+  renderVals() {
+    return {
+      rootRef: this.rootRef,
+      themeLabel: this.effectiveMode() === 'dark' ? 'light_mode' : 'dark_mode',
+      toggleTheme: () => {
+        const next = this.effectiveMode() === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('mc-portfolio-v4-theme', next); } catch (e) {}
+        this.setState({ override: next });
+      }
+    };
+  }
+}
+</script>
+
+
+</body></html>

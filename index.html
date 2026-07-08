@@ -3,18 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mabrur Chowdhury — Senior Android Engineer</title>
+  <title>mabrur.dev — Senior Android Engineer</title>
   <meta name="description" content="Senior Android Engineer in Dhaka, Bangladesh. Nine years of Kotlin at consumer scale — offline-first architecture, unreliable networks, and releases that don't crash.">
   <link rel="stylesheet" href="style.css">
   <script>
     // Set theme before first paint to avoid a flash of the wrong palette.
+    // Dark-first: only switch to light when explicitly chosen.
     (function () {
       var saved = null;
-      try { saved = localStorage.getItem('mc-portfolio-theme'); } catch (e) {}
-      var theme = (saved === 'light' || saved === 'dark')
-        ? saved
-        : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
+      try { saved = localStorage.getItem('mc-portfolio-v4-theme'); } catch (e) {}
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
     })();
   </script>
 </head>
@@ -25,190 +23,261 @@
     <!-- ============ HEADER ============ -->
     <header class="site-header">
       <p class="brand">
-        <span class="brand-dot"></span>
-        <span class="brand-name">Mabrur Chowdhury</span>
-        <span class="brand-role">Senior Android Engineer · Dhaka, Bangladesh</span>
+        <span class="c-green">~/</span><span class="brand-name">mabrur</span><span class="c-faint">·</span><span class="brand-role">senior android engineer · dhaka, bd</span>
       </p>
       <nav class="site-nav">
-        <a class="link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-        <a class="link" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="link" href="mailto:hello@mabrur.dev">Email</a>
-        <a class="link" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">Resume ↓</a>
-        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">Dark</button>
+        <a class="nav-link" href="https://github.com" target="_blank" rel="noopener">github</a>
+        <a class="nav-link" href="https://linkedin.com" target="_blank" rel="noopener">linkedin</a>
+        <a class="nav-link" href="mailto:hello@mabrur.dev">email</a>
+        <a class="nav-link nav-link--cta" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">resume.pdf ↓</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle color theme">light_mode</button>
       </nav>
     </header>
 
     <!-- ============ INTRO ============ -->
     <section class="intro">
+      <p class="intro-prompt"><span class="c-green">$</span> whoami <span class="comment">&nbsp;# 9 years, Kotlin, consumer scale</span></p>
       <h1 class="intro-headline">
-        I build Android apps that <em>millions of people</em> depend on.
+        I build Android apps that <span class="c-green">millions of people</span> depend on<span class="cursor"></span>
       </h1>
       <p class="intro-lede">
-        A national contact-tracing platform for Bangladesh. A super-app whose growth helped raise a $15M Series A. And now — an end-to-end-encrypted messenger for the enterprise.
-      </p>
-      <p class="intro-note">
-        Nine years of Kotlin at consumer scale, with a bias for offline-first architecture, unreliable networks, and releases that don't crash.
+        A national contact-tracing platform for Bangladesh. A super-app whose growth helped raise a <strong>$15M Series A</strong>. Now: an end-to-end-encrypted messenger for the enterprise — built for networks that drop every few minutes.
       </p>
     </section>
 
-    <!-- ============ METRICS ============ -->
+    <!-- ============ METRICS (terminal) ============ -->
     <section class="metrics" data-reveal>
-      <div class="metric metric--accent">
-        <div class="metric-value">1M+</div>
-        <div class="metric-label">Active installs</div>
-      </div>
-      <div class="metric metric--green">
-        <div class="metric-value">100K+</div>
-        <div class="metric-label">Daily active users</div>
-      </div>
-      <div class="metric metric--cobalt">
-        <div class="metric-value">98%</div>
-        <div class="metric-label">Crash-free sessions</div>
+      <div class="terminal">
+        <div class="terminal-bar">
+          <span class="terminal-dot terminal-dot--red"></span>
+          <span class="terminal-dot terminal-dot--yellow"></span>
+          <span class="terminal-dot terminal-dot--green"></span>
+          <span class="terminal-title">mabrur@dhaka: ~/impact</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-cmd"><span class="c-green">$</span> ./stats --production</p>
+          <div class="metric-grid">
+            <div>
+              <div class="metric-value metric-value--green">1M+</div>
+              <div class="metric-label"><span class="dash">--</span>active-installs</div>
+            </div>
+            <div>
+              <div class="metric-value metric-value--cyan">100K+</div>
+              <div class="metric-label"><span class="dash">--</span>daily-active-users</div>
+            </div>
+            <div>
+              <div class="metric-value metric-value--orange">98%+</div>
+              <div class="metric-label"><span class="dash">--</span>crash-free-sessions</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============ SELECTED WORK ============ -->
     <section id="work" class="section">
-      <div class="section-marker">
-        <div class="section-number section-number--accent">01</div>
-        <h2 class="section-title">Selected Work</h2>
-      </div>
+      <h2 class="section-heading"><span class="c-violet">fun</span> <span class="c-ink">selectedWork</span><span class="c-faint">(): List&lt;</span><span class="c-cyan">Project</span><span class="c-faint">&gt; {</span></h2>
 
-      <div class="section-body">
-        <article class="work" data-reveal>
-          <p class="eyebrow eyebrow--accent">Now building</p>
-          <h3 class="work-title">Enterprise end-to-end-encrypted messenger</h3>
-          <p class="work-sub">Confidential enterprise product — no screenshots, by design</p>
-          <p class="work-desc">
-            The Android client for a secure workplace messenger: Signal-protocol encryption over MQTT, voice and video on Janus WebRTC. I own session and multi-device key management end-to-end — and the unglamorous work of keeping calls alive on networks that drop every few minutes.
-          </p>
-          <div class="tags">
-            <span class="tag">Kotlin</span>
-            <span class="tag">Jetpack Compose</span>
-            <span class="tag">libsignal</span>
-            <span class="tag">MQTT</span>
-            <span class="tag">Janus WebRTC</span>
-            <span class="tag">Coroutines</span>
+      <div class="stack-list">
+        <article class="card work" data-reveal>
+          <p class="work-comment">// current · confidential — no screenshots, by design</p>
+          <div class="work-titlerow">
+            <h3 class="work-title">Enterprise E2E-encrypted messenger</h3>
+            <span class="badge">● now building</span>
           </div>
+          <p class="work-desc">
+            The Android client for a secure workplace messenger: Signal-protocol encryption over MQTT, voice and video on Janus WebRTC. I own session and multi-device key management end-to-end — and the unglamorous work of keeping calls alive on hostile networks.
+          </p>
+          <p class="work-stack"><span class="c-violet">val</span> stack <span class="c-faint">=</span> <span class="c-orange">[Kotlin, Compose, libsignal, MQTT, Janus WebRTC, Coroutines]</span></p>
         </article>
 
-        <article class="work" data-reveal>
-          <p class="eyebrow eyebrow--green">1M+ installs · 100K+ DAU</p>
+        <article class="card work" data-reveal>
+          <p class="work-comment">// 1M+ installs · 100K+ DAU · $15M Series A</p>
           <h3 class="work-title">Ride-sharing &amp; food-delivery super-app</h3>
-          <p class="work-sub">Consumer super-app — rides, food, parcels</p>
           <p class="work-desc">
-            Core Android engineer through hypergrowth. Rebuilt the ordering flow and real-time trip tracking for low-end devices on 2G — cutting cold start in half and holding 98%+ crash-free while traction underpinned a $15M Series A.
+            Core Android engineer through hypergrowth — rides, food, parcels. Rebuilt the ordering flow and real-time trip tracking for low-end devices on 2G: cold start cut in half, 98%+ crash-free held while traction underpinned the raise.
           </p>
-          <div class="tags">
-            <span class="tag">Kotlin</span>
-            <span class="tag">Java</span>
-            <span class="tag">Maps SDK</span>
-            <span class="tag">Firebase</span>
-            <span class="tag">gRPC</span>
-          </div>
+          <p class="work-stack"><span class="c-violet">val</span> stack <span class="c-faint">=</span> <span class="c-orange">[Kotlin, Java, Maps SDK, Firebase, gRPC]</span></p>
         </article>
 
-        <article class="work" data-reveal>
-          <p class="eyebrow eyebrow--cobalt">Government of Bangladesh</p>
+        <article class="card work" data-reveal>
+          <p class="work-comment">// government of bangladesh · shipped in weeks</p>
           <h3 class="work-title">National Covid-19 contact tracing</h3>
-          <p class="work-sub">Built on a pandemic timeline</p>
           <p class="work-desc">
-            A privacy-preserving BLE contact-tracing app for a country of 160 million, shipped in weeks. Battery-safe background scanning, Bangla-first localization, and onboarding that worked for people installing their first app.
+            A privacy-preserving BLE contact-tracing app for a country of 160 million. Battery-safe background scanning, Bangla-first localization, and onboarding that worked for people installing their first app.
           </p>
-          <div class="tags">
-            <span class="tag">Kotlin</span>
-            <span class="tag">BLE</span>
-            <span class="tag">WorkManager</span>
-            <span class="tag">Room</span>
-          </div>
+          <p class="work-stack"><span class="c-violet">val</span> stack <span class="c-faint">=</span> <span class="c-orange">[Kotlin, BLE, WorkManager, Room]</span></p>
         </article>
 
-        <article class="work" data-reveal>
-          <p class="eyebrow eyebrow--accent">Rural connectivity</p>
+        <article class="card work" data-reveal>
+          <p class="work-comment">// data collection where the network is a rumor</p>
           <h3 class="work-title">Offline-first field data platform</h3>
-          <p class="work-sub">Data collection where the network is a rumor</p>
           <p class="work-desc">
-            A collection platform for field teams working days away from a signal. Designed a conflict-free sync engine with queued, resumable media uploads — days of offline work reconciles cleanly the moment connectivity returns, with zero data loss.
+            Built for field teams working days away from a signal. A conflict-free sync engine with queued, resumable media uploads — days of offline work reconciles cleanly the moment connectivity returns, with zero data loss.
           </p>
-          <div class="tags">
-            <span class="tag">Kotlin</span>
-            <span class="tag">Room</span>
-            <span class="tag">SQLite</span>
-            <span class="tag">WorkManager</span>
-          </div>
+          <p class="work-stack"><span class="c-violet">val</span> stack <span class="c-faint">=</span> <span class="c-orange">[Kotlin, Room, SQLite, WorkManager]</span></p>
         </article>
+      </div>
+      <p class="section-close">}</p>
+    </section>
+
+    <!-- ============ APPS & PROJECTS ============ -->
+    <section id="apps" class="section" data-reveal>
+      <h2 class="section-heading"><span class="c-green">$</span> ls ~/apps <span class="c-faint">--all</span></h2>
+      <p class="section-sub">// shipped to production + weekend builds</p>
+
+      <div class="apps-grid">
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">Super-app — Rider</h3>
+              <span class="tag tag--shipped">shipped</span>
+            </div>
+            <p class="app-desc">Rides, food &amp; parcels for 1M+ users.</p>
+            <a class="app-link" href="#" target="_blank" rel="noopener">play store ↗</a>
+          </div>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">Super-app — Driver</h3>
+              <span class="tag tag--shipped">shipped</span>
+            </div>
+            <p class="app-desc">Real-time dispatch &amp; navigation on 2G.</p>
+            <a class="app-link" href="#" target="_blank" rel="noopener">play store ↗</a>
+          </div>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">Covid-19 Tracer BD</h3>
+              <span class="tag tag--shipped">shipped</span>
+            </div>
+            <p class="app-desc">National BLE contact tracing, gov of Bangladesh.</p>
+            <a class="app-link" href="#" target="_blank" rel="noopener">play store ↗</a>
+          </div>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">Field Data Collector</h3>
+              <span class="tag tag--shipped">shipped</span>
+            </div>
+            <p class="app-desc">Offline-first surveys for rural field teams.</p>
+            <a class="app-link" href="#" target="_blank" rel="noopener">play store ↗</a>
+          </div>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">MQTT Bench</h3>
+              <span class="tag tag--personal">personal</span>
+            </div>
+            <p class="app-desc">Open-source MQTT load-testing toolkit for mobile.</p>
+            <a class="app-link" href="https://github.com" target="_blank" rel="noopener">github ↗</a>
+          </div>
+        </div>
+
+        <div class="card app-card">
+          <div class="app-icon">icon</div>
+          <div class="app-body">
+            <div class="app-titlerow">
+              <h3 class="app-title">Rickshaw Fare</h3>
+              <span class="tag tag--personal">personal</span>
+            </div>
+            <p class="app-desc">Compose playground — offline fare estimator for Dhaka.</p>
+            <a class="app-link" href="https://github.com" target="_blank" rel="noopener">github ↗</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- ============ WRITING ============ -->
     <section id="writing" class="section" data-reveal>
-      <div class="section-marker">
-        <div class="section-number section-number--green">02</div>
-        <h2 class="section-title">Writing</h2>
+      <h2 class="section-heading"><span class="c-violet">val</span> <span class="c-ink">writing</span> <span class="c-faint">= listOf(</span></h2>
+      <div class="writing-list">
+        <div class="writing-row">
+          <span class="writing-num">01</span>
+          <div>
+            <a class="writing-link" href="#">Making libsignal behave on Android <span class="arrow">↗</span></a>
+            <p class="writing-desc">Sessions, sealed sender, and the multi-device edge cases nobody writes about.</p>
+          </div>
+        </div>
+        <div class="writing-row">
+          <span class="writing-num">02</span>
+          <div>
+            <a class="writing-link" href="#">Offline-first is a state machine <span class="arrow">↗</span></a>
+            <p class="writing-desc">Designing sync you can actually reason about when the network is a rumor.</p>
+          </div>
+        </div>
+        <div class="writing-row">
+          <span class="writing-num">03</span>
+          <div>
+            <a class="writing-link" href="#">Surviving the 2G tail <span class="arrow">↗</span></a>
+            <p class="writing-desc">Performance budgets for the low-end Android devices most of the world uses.</p>
+          </div>
+        </div>
       </div>
-      <div class="section-body section-body--writing">
-        <div>
-          <a class="link writing-link" href="#">Making libsignal behave on Android <span class="arrow">↗</span></a>
-          <p class="writing-desc">Sessions, sealed sender, and the multi-device edge cases nobody writes about.</p>
+      <p class="section-close">)</p>
+    </section>
+
+    <!-- ============ EXPERIENCE (git log) ============ -->
+    <section id="experience" class="section" data-reveal>
+      <h2 class="section-heading"><span class="c-green">$</span> git log <span class="c-faint">--career --oneline</span></h2>
+      <div class="gitlog">
+        <div class="git-row">
+          <span class="git-dot git-dot--head"></span>
+          <span class="git-date">2022→now</span>
+          <span class="git-org">Enterprise Messaging Co.</span>
+          <span class="git-role">senior android engineer</span>
+          <span class="git-head">HEAD</span>
         </div>
-        <div>
-          <a class="link writing-link" href="#">Offline-first is a state machine <span class="arrow">↗</span></a>
-          <p class="writing-desc">Designing sync you can actually reason about when the network is a rumor.</p>
+        <div class="git-row">
+          <span class="git-dot"></span>
+          <span class="git-date">2018→2022</span>
+          <span class="git-org">Super-App Co.</span>
+          <span class="git-role">senior android engineer</span>
         </div>
-        <div>
-          <a class="link writing-link" href="#">Surviving the 2G tail <span class="arrow">↗</span></a>
-          <p class="writing-desc">Performance budgets for the low-end Android devices most of the world uses.</p>
+        <div class="git-row">
+          <span class="git-dot"></span>
+          <span class="git-date">2016→2018</span>
+          <span class="git-org">Digital Services Co.</span>
+          <span class="git-role">android engineer</span>
+        </div>
+        <div class="git-row">
+          <span class="git-dot"></span>
+          <span class="git-date">2015→2016</span>
+          <span class="git-org">Software Studio Ltd.</span>
+          <span class="git-role">software engineer</span>
         </div>
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
-    <section id="experience" class="section section--last" data-reveal>
-      <div class="section-marker">
-        <div class="section-number section-number--cobalt">03</div>
-        <h2 class="section-title">Experience</h2>
-      </div>
-      <div class="section-body section-body--experience">
-        <div class="xp-row">
-          <span class="xp-dates xp-dates--current">2022 — Present</span>
-          <span class="xp-org">Enterprise Messaging Co.</span>
-          <span class="xp-role">Senior Android Engineer</span>
-        </div>
-        <div class="xp-row">
-          <span class="xp-dates">2018 — 2022</span>
-          <span class="xp-org">Super-App Co.</span>
-          <span class="xp-role">Senior Android Engineer</span>
-        </div>
-        <div class="xp-row">
-          <span class="xp-dates">2016 — 2018</span>
-          <span class="xp-org">Digital Services Co.</span>
-          <span class="xp-role">Android Engineer</span>
-        </div>
-        <div class="xp-row">
-          <span class="xp-dates">2015 — 2016</span>
-          <span class="xp-org">Software Studio Ltd.</span>
-          <span class="xp-role">Software Engineer</span>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <!-- ============ FOOTER (full-bleed color) ============ -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-eyebrow">Have a role in mind?</p>
-      <a class="footer-mail" href="mailto:hello@mabrur.dev">hello@mabrur.dev</a>
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+      <p class="footer-prompt"><span class="c-green">$</span> ping mabrur <span class="comment">&nbsp;# have a role in mind?</span></p>
+      <a class="footer-mail" href="mailto:hello@mabrur.dev">hello@mabrur.dev<span class="cursor-static">_</span></a>
       <div class="footer-meta">
         <div class="footer-links">
-          <a class="footer-link" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
-          <a class="footer-link" href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
-          <a class="footer-link" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">Resume ↓</a>
+          <span class="footer-status"><span class="status-dot"></span>open to senior roles</span>
+          <a class="footer-link" href="https://github.com" target="_blank" rel="noopener">github</a>
+          <a class="footer-link" href="https://linkedin.com" target="_blank" rel="noopener">linkedin</a>
+          <a class="footer-link" href="resume.pdf" download="Mabrur-Chowdhury-Resume.pdf">resume.pdf</a>
         </div>
-        <span class="footer-place">Dhaka, Bangladesh · 2026</span>
+        <span class="footer-place">UTF-8 · Kotlin · dhaka, bd · 2026</span>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </div>
 
   <script src="script.js"></script>
 </body>
